@@ -22,30 +22,46 @@ let covidData = require('./data');
 // console.log(sum);
 
 //  * 2. Which state or territory had the highest number of cases:
-// let highest = {state: ``, cases: 0}
+// let highestCases = 0
+// let highestState = ''
 // for (let i = 0; i < covidData.length; i++) {
-//     if (covidData[i].cases > highest) {
-//         highest.state = covidData[i].state
-//         highest.cases = covidData[i].cases
+//     if (covidData[i].cases > highestCases) {
+//         highestState = covidData[i].state
+//         highestCases = covidData[i].cases
 //     }
 // }
-// console.log(`${highest.state}: ${highest.cases}`);
+// console.log(`${highestState}: ${highestCases}`);
 
 //  * 3. Which state or territory had the highest number of deaths:
-let highest = 0;
-for (let i = 0; i < covidData.length; i++) {
-    if (covidData[i].deaths > highest) {
-        highest = covidData[i].deaths
-    }
-}
-console.log(highest);
-//  * 4. Lowest state or territory for deaths
-//  * 5. Lowest state or territory for cases
-// let lowest = 999999999999999999999
+// let highestDeaths = 0
+// let highestState = ''
 // for (let i = 0; i < covidData.length; i++) {
-//     if (covidData[i].deaths < lowest) {
-//         let lowest = covidData[i].deaths
+//     if (covidData[i].deaths > highestDeaths) {
+//         highestState = covidData[i].state
+//         highestDeaths = covidData[i].deaths
 //     }
 // }
-// console.log(lowest);
+// console.log(`${highestState}: ${highestDeaths}`);
 
+//  * 4. Lowest state or territory for deaths
+// let lowestDeaths = Infinity
+// let lowestState = 0
+
+// for (let i = 0; i < covidData.length; i++) {
+//     if (covidData[i].deaths < lowestDeaths) {
+//         lowestDeaths = covidData[i].deaths
+//         lowestState = covidData[i].state
+//     }
+// }
+// console.log(`${lowestState}: ${lowestDeaths}`);
+
+//  * 5. Lowest state or territory for cases
+let lowestCases = Infinity;
+let lowestState = 0
+for (let i = 0; i < covidData.length; i++) {
+    if (covidData[i].cases < lowestCases) {
+        lowestNumOfCases = covidData[i].cases
+        lowestState = covidData[i].state
+    }
+}
+console.log(`${lowestState}: ${lowestCases}`);
