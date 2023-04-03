@@ -56,12 +56,12 @@ let covidData = require('./data');
 // console.log(`${lowestState}: ${lowestDeaths}`);
 
 //  * 5. Lowest state or territory for cases
-let lowestCases = Infinity;
-let lowestState = 0
-for (let i = 0; i < covidData.length; i++) {
-    if (covidData[i].cases < lowestCases) {
-        lowestNumOfCases = covidData[i].cases
-        lowestState = covidData[i].state
-    }
-}
-console.log(`${lowestState}: ${lowestCases}`);
+// let lowestCases = Infinity;
+// let lowestState = 0
+// for (let i = 0; i < covidData.length; i++) {
+//     if (covidData[i].cases < lowestCases) {
+//         lowestNumOfCases = covidData[i].cases
+//         lowestState = covidData[i].state
+//     }
+// }
+// console.log(`${lowestState}: ${lowestCases}`);
