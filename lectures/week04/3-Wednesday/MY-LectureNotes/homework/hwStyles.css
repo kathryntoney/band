@@ -35,6 +35,10 @@ sans-serif; */
     color: white;
 }
 
+.text-darkblue {
+    color: #2f4858;
+}
+
 .text-yellow {
     color: #f6ae2d;
 }
@@ -51,4 +55,8 @@ sans-serif; */
 #smallheaders {
     font-size: 25px;
     text-decoration: underline #f6ae2d;
+}
+
+.container-fluid {
+    background-color: rgb(47, 72, 88, 0.9)
 }
