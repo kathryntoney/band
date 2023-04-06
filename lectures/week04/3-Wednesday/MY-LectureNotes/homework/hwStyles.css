@@ -1,0 +1,54 @@
+/* dark blue:  #2f4858
+medium blue: #33658a
+light blue: #86bbd8
+yellow: #f6ae2d
+orange: #f26419 */
+/* font-family: 'Quicksand',
+sans-serif; */
+
+.body {
+    font-family: 'Quicksand',
+        sans-serif;
+}
+
+.bg-darkblue {
+    background-color: #2f4858;
+}
+
+.bg-mediumblue {
+    background-color: #33658a;
+}
+
+.bg-lightblue {
+    background-color: #86bbd8;
+}
+
+.bg-orange {
+    background-color: #f26419;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-yellow {
+    color: #f6ae2d;
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+#home {
+    font-size: 25px;
+    color: white;
+}
+
+#smallheaders {
+    font-size: 25px;
+    text-decoration: underline #f6ae2d;
+}

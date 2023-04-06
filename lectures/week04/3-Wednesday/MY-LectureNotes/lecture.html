@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS -> HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script> -->
+    <script src="scripts/lecture.js"></script>
+    <style>
+        .dc {
+            background-color: lightseagreen;
+            color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="learningDom">
+        <ul>
+            <li class="dc">one</li>
+            <li class="dc">two</li>
+            <li class="dc">three</li>
+            <li class="dc">four</li>
+            <li class="dc">five</li>
+        </ul>
+    </div>
+
+    <span class="dc">this is a span tag</span>
+    <span class="dc">this is a span tag</span>
+    <span class="dc">this is a span tag</span>
+    <span class="dc">this is a span tag</span>
+    <span class="dc">this is a span tag</span>
+
+    <script>
+        // always start with document
+        // let div = document.getElementById("learningDOM")
+        // console.log(div);
+
+        // let liTags = document.getElementsByClassName("dc")
+        // console.log(liTags);
+
+        // let spanTags = document.getElementsByTagName("span")
+        // console.log(spanTags);
+
+        // let spanTagNodeList = document.getElementsByTagName('span')
+        // console.log(spanTagNodeList);
+        // console.log(spanTagNodeList[0]);
+        // spanTagNodeList[0].textContent = "changed the text"
+        // for (let i = 0; i < spanTagNodeList.length; i++) {
+        //     spanTagNodeList[i].textContent = "puppies are cute"
+        // }
+        // for (let node of spanTagNodeList) {
+        //     node.innerHTML = "puppies are cute"
+        // }
+
+        let ul = document.querySelector('ul') // this will only give you the very first one it fings
+        console.log(ul);
+        let li = document.querySelector('li')
+        let liX = document.querySelectorAll('li')
+
+        let dc = document.querySelectorAll('span.dc')
+
+    </script>
+</body>
+
+</html>
