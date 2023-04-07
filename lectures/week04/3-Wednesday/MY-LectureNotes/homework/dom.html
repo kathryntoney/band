@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighOnCoding</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hwStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+
+
+
+
+    <script>
+        // navbar
+        let nav = document.createElement('nav')
+        nav.setAttribute('class', 'navbar navbar-expand-lg bg-darkblue')
+        let body = document.querySelector('body')
+        body.append(nav)
+        let contFluid = document.createElement('div')
+        contFluid.setAttribute('class', 'container-fluid')
+        nav.append(contFluid)
+        let anchor1 = document.createElement('a')
+        anchor1.setAttribute('class', 'navbar-brand text-yellow')
+        anchor1.setAttribute('href', '#')
+        anchor1.innerText = "HighOnCoding"
+        contFluid.append(anchor1)
+        console.log(contFluid);
+        let button = document.createElement('button')
+        button.setAttribute('class', 'navbar-toggler')
+        button.setAttribute('type', 'button')
+        button.setAttribute('data-bs-toggle', 'collapse')
+        button.setAttribute('data-bs-target', '#navbarNav')
+        contFluid.append(button)
+        let span = document.createElement('span')
+        span.setAttribute('class', 'navbar-toggler-icon')
+        button.append(span)
+
+        let collapse = document.createElement('div')
+        collapse.setAttribute('class', 'collapse navbar-collapse')
+        collapse.setAttribute('id', 'navbarNav')
+        let navList = document.createElement('ul')
+        navList.setAttribute('class', 'navbar-nav')
+        console.log(navList);
+        collapse.appendChild(navList)
+        console.log(collapse);
+        let li1 = document.createElement('li')
+        li1.setAttribute('class', 'nav-item')
+        li1.setAttribute('id', 'home')
+        navList.append(li1)
+        let navListA1 = document.createElement('a')
+        navListA1.setAttribute('class', 'nav-link text-white')
+        navListA1.setAttribute('href', '#')
+        navListA1.innerText = "Home"
+        li1.append(navListA1)
+        let li2 = document.createElement('li')
+        li2.setAttribute('class', 'nav-item')
+        li2.setAttribute('id', 'home')
+        navList.append(li2)
+        let navListA2 = document.createElement('a')
+        navListA2.setAttribute('class', 'nav-link text-white')
+        navListA2.setAttribute('href', '#')
+        navListA2.innerText = "Categories"
+        li2.append(navListA2)
+        contFluid.appendChild(collapse)
+
+
+        // ==============================================================
+
+        let main = document.createElement('div')
+        main.setAttribute('class', 'container-fluid m-0 p-3 position-relative')
+        body.append(main)
+        let curseDiv = document.createElement('div')
+        curseDiv.setAttribute('class', 'display-6 bg-mediumblue p-3 pb-0 text-white text-bold')
+        curseDiv.innerText = 'Curse of the Current Reviews'
+        main.append(curseDiv)
+        let intro = document.createElement('div')
+        intro.setAttribute('class', 'text-white bg-mediumblue p-3 mb-3')
+        intro.innerText = "When you want to buy any application from the Apple iTunes store, you have more choices than you can handle. Most of the users scroll past the application descrption, completely avoiding it - like ads displayed on the right column of your webpage. Their choice is dependent on three important factors: price, screenshot, and reviews."
+        main.append(intro)
+        let smallHead1 = document.createElement('div')
+        smallHead1.setAttribute('class', 'display-6 bg-lightblue text-white p-2')
+        smallHead1.setAttribute('id', 'smallheaders')
+        smallHead1.innerText = "Hello WatchKit"
+        main.append(smallHead1)
+        let copy1 = document.createElement('div')
+        copy1.setAttribute('class', 'bg-lightblue text-darkblue p-3 pt-0')
+        copy1.innerText = "Last month, Apple released the anticipated WatchKit Framework for developers in the form of iOS 8.2 beta SDK release. The WatchKit framework enables the developers to create Apple Watch applications. In this article, we are going to focus on the basics of getting started with the WatchKit framework and developing apps for the Apple Watch."
+        main.append(copy1)
+        let input1 = document.createElement('div')
+        input1.setAttribute('class', 'd-flex flex-row bg-orange text-white mb-3')
+        input1.setAttribute('id', 'responses')
+        let comm1 = document.createElement('div')
+        comm1.setAttribute('class', 'p-2')
+        comm1.innerText = "12 comments"
+        input1.append(comm1)
+        let likes1 = document.createElement('div')
+        likes1.setAttribute('class', 'p-2')
+        likes1.innerText = "124 likes"
+        input1.append(likes1)
+        main.append(input1)
+
+        let smallHead2 = document.createElement('div')
+        smallHead2.setAttribute('class', 'display-6 bg-lightblue text-white p-2')
+        smallHead2.setAttribute('id', 'smallheaders')
+        smallHead2.innerText = "Introduction to Swift"
+        main.append(smallHead2)
+        let copy2 = document.createElement('div')
+        copy2.setAttribute('class', 'bg-lightblue text-darkblue p-3 pt-0')
+        copy2.innerText = "Swift is a modern programming language developed by Apple to create the next generation of iOS and OSC applications. Swift is a fairly new language and still in development, but it clearly reflects the intentions and the future direction. This article will revolve around the basic concepts in the Swift language and how you can get started."
+        main.append(copy2)
+        let input2 = document.createElement('div')
+        input2.setAttribute('class', 'd-flex flex-row bg-orange text-white mb-3')
+        let comm2 = document.createElement('div')
+        comm2.setAttribute('class', 'p-2')
+        comm2.innerText = "15 comments"
+        input2.append(comm2)
+        let likes2 = document.createElement('div')
+        likes2.setAttribute('class', 'p-2')
+        likes2.innerText = "45 likes"
+        input2.append(likes2)
+        main.append(input2)
+        body.append(main)
+
+
+
+    </script>
+</body>
+
+</html>
