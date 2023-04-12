@@ -79,7 +79,7 @@
 
 // let add = function (num1, num2) {
 //     return num1 + num2;
-// }
+// }lo
 
 // let add = (num1, num2) => num1 + num2;
 
@@ -94,7 +94,7 @@
 // }
 
 // let result = calc(5, 6, add)
-// console.log(calc);
+// console.log(result);
 
 //* arrays have built-in functions that make use of callbacks
 // let arr2 = new Array(1, 2, 3, 4, 5)
@@ -141,8 +141,8 @@
 // })
 // console.log(answer);
 
-let arr = [67, 45, 39, 20]
-let answer = arr.some(num => {
-    return num > 10;
-})
-console.log(answer);
+// let arr = [67, 45, 39, 20]
+// let answer = arr.some(num => {
+//     return num > 10;
+// })
+// console.log(answer);
