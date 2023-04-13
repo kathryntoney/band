@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            const xhr = new XMLHttpRequest()
+            const url = "https://jsonplaceholder.typicode.com/posts"
+            xhr.open("GET", url)
+            xhr.onload = () => {
+                if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText)
+                    resolve(data);
+                    // console.log(data);
+                }
+                else {
+                    reject('failed to retrieve data')
+                    // console.log('failed to retrieve data');
+                }
+            }
+
+            xhr.send()
+        })
+            .then(result) => {
+            console.log(result);
+        }
+            .catch (result) => {
+            console.log(result);
+        }
+
+        console.log('process data');
+    </script>
+</body>
+
+</html>
