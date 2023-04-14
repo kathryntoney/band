@@ -83,3 +83,4 @@ finally {
 
 }
 
+console.log(object);
