@@ -1,0 +1,97 @@
+#movieList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1621274283140-e4450435a76a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80');
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#instructions {
+    font-size: 20px;
+}
+
+.movie {
+    border: 1px solid black;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-style: italic;
+}
+
+.thumbnail {
+    height: 100px;
+}
+
+#header {
+    font-family: 'Kanit', sans-serif;
+    text-decoration: solid underline;
+    margin-bottom: 5px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 100px;
+}
+
+#movieList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 8px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+#movieDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#movieInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+#details {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#poster {
+    display: flex;
+    width: 40vw;
+    background-color: rgb(255, 255, 255, 0.7);
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#movieInfo {
+    display: flex;
+    justify-content: center;
+}
+
+#movieDetails {
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 40vw;
+    height: 300px;
+    border: 2px solid black;
+}
+
+#posterImg {
+    background-color: rgb(255, 255, 255, 0.7);
+    height: 300px;
+}
