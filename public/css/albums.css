@@ -1,0 +1,59 @@
+/* blue: #003049
+red: #d62828
+orange: #f77f00
+yellow: #fcbf49
+cream: #eae2b7
+font-family: 'Space Grotesk', sans-serif; */
+
+body {
+    background-color: #eae2b7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #d62828;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar-logo {
+    width: 80px;
+}
+
+.nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #003049;
+    font-size: 25px;
+}
+
+.album-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.album-cover {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.summary {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+}
+
+.track-list {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.album-info {
+    display: block;
+    flex-direction: column;
+}

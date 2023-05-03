@@ -1,0 +1,44 @@
+/* blue: #003049
+red: #d62828
+orange: #f77f00
+yellow: #fcbf49
+cream: #eae2b7
+font-family: 'Space Grotesk', sans-serif; */
+
+body {
+    background-image: url("../images/haimbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    background-color: rgb(234, 226, 183, 0.4);
+    width: fit-content;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: rgb(234, 226, 183, 0.6);
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #003049;
+    font-size: 25px;
+}
