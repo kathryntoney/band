@@ -12,12 +12,27 @@ router.get('/albums', (req, res) => {
     res.render('albums', {
         trackList: trackList,
         albums: albumData,
+        pageTitle: "Haim"
     })
 })
 
-// router.get('/albums/:album', (req, res) => {
-//     let album = req.params.album;
-//     res.render('album', { album })
-// })
+router.get('/albums/:albumID', (req, res) => {
+    let albumID = req.params.albumID;
+    let album = [];
+    let trackList = [];
+    albumData.forEach(albumObj => {
+        if (albumObj.albumName == albumID) {
+            album.push(albumObj)
+            trackList = albumObj.trackList
+            let youtube = true;
+        }
+    })
+
+    res.render('albums', {
+        trackList: trackList,
+        albums: album,
+        pageTitle: `Haim - ${album[0].albumName}`
+    })
+})
 
 module.exports = router;

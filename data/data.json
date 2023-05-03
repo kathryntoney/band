@@ -3,7 +3,7 @@
         {
             "name": "Haim",
             "albumName": "Days Are Gone",
-            "summary": "Days Are Gone is the debut studio album by American pop rock band Haim, released on September 27, 2013 by Polydor Records. The album spawned six singles: 'Forever', 'Don't Save Me', 'Falling', 'The Wire', 'If I Could Change Your Mind', and 'My Song 5'. The album was recognized as one of 'The 100 Best Albums of the Decade So Far' by Pitchfork in August 2014.",
+            "summary": " is the debut studio album by American pop rock band Haim, released on September 27, 2013 by Polydor Records. The album spawned six singles: 'Forever', 'Don't Save Me', 'Falling', 'The Wire', 'If I Could Change Your Mind', and 'My Song 5'. The album was recognized as one of 'The 100 Best Albums of the Decade So Far' by Pitchfork in August 2014.",
             "trackList": [
                 "Falling",
                 "Forever",
@@ -18,12 +18,13 @@
                 "Running If You Call My Name"
             ],
             "spotify": "729Vh0HApsm7hGDVjbmtrf",
+            "youtube": "AIjVpRAXK18",
             "cover": "days_are_gone.png"
         },
         {
             "name": "Haim",
             "albumName": "Something to Tell You",
-            "summary": "Something to Tell You is the second studio album by American pop rock band Haim. It was released on July 7, 2017. 'Little of Your Love' was then announced as the second single on June 18, 2017 via Twitter. 'Nothing's Wrong' was released as the third single on August 21, 2017.",
+            "summary": " is the second studio album by American pop rock band Haim. It was released on July 7, 2017. 'Little of Your Love' was then announced as the second single on June 18, 2017 via Twitter. 'Nothing's Wrong' was released as the third single on August 21, 2017.",
             "trackList": [
                 "Want You Back",
                 "Nothing's Wrong",
@@ -38,12 +39,13 @@
                 "Night So Long"
             ],
             "spotify": "5m9rXTBF7mHFGQlFsiEHrY",
+            "youtube": "yPQfcG-eimk",
             "cover": "something_to_tell_you.png"
         },
         {
             "name": "Haim",
             "albumName": "Women in Music Pt. III",
-            "summary": "Women in Music Pt. III is the third studio album by American rock band Haim. It was released on June 26, 2020. The album was originally set for release on April 24, 2020 but was delayed due to the effects of the COVID-19 pandemic. The album was eventually nominated for Album of the Year at the 63rd Grammy Awards, while 'The Steps' was nominated for Best Rock Performance.",
+            "summary": " is the third studio album by American rock band Haim. It was released on June 26, 2020. The album was originally set for release on April 24, 2020 but was delayed due to the effects of the COVID-19 pandemic. The album was eventually nominated for Album of the Year at the 63rd Grammy Awards, while 'The Steps' was nominated for Best Rock Performance.",
             "trackList": [
                 "Los Angeles",
                 "The Steps",
@@ -63,6 +65,7 @@
                 "Summer Girl"
             ],
             "spotify": "396EJBtUzseofX2YCBJVvM",
+            "youtube": "vfZSgr_si4I",
             "cover": "women_in_music.png"
         }
     ]
