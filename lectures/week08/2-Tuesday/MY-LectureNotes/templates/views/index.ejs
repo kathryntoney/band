@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Hello</title>
 </head>
 
 <body>
     <h1>hello, we're learning EJS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit, delectus inventore in a ratione,
-        illo non dolores ea rem accusamus fuga, vel sapiente reprehenderit animi praesentium temporibus eius maxime!</p>
+    <h2>
+        <%= greeting %>
+    </h2>
+
+    <% %>
+
+        <h2>
+            <%= firstName %>
+                <%= lastName %>
+        </h2>
+        <h2>
+            <%= year %>
+        </h2>
+        <h2>
+            <%= nums %>
+        </h2>
+
+        <% for( let index=0; index < array.length; index++ ) { %>
+            <p>
+                <%= nums[index] %>
+            </p>
+            <% } %>
+
+
+                <h2>
+                    <%= contacts.cell %>
+                </h2>
+                <h2>
+                    <%= contacts.work %>
+                </h2>
+                <h2>
+                    <%= contacts.email %>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit, delectus inventore in
+                    a
+                    ratione,
+                    illo non dolores ea rem accusamus fuga, vel sapiente reprehenderit animi praesentium temporibus eius
+                    maxime!
+                </p>
 </body>
 
 </html>

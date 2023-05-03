@@ -10,9 +10,22 @@
 
 <body>
     <h1>hello, we're learning EJS</h1>
-    <h2>city</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit, delectus inventore in a ratione,
-        illo non dolores ea rem accusamus fuga, vel sapiente reprehenderit animi praesentium temporibus eius maxime!</p>
+    <h2> <a href="/city">City Home</a> </h2>
+
+    <ul>
+        <% for( let index=0; index < cities.length; index++ ) { %>
+            <li><a href="/city/<%= index %> ">
+                    <%= cities[index] %>
+                </a></li>
+            <% } %>
+                <% for( let index=0; index < cities.length; index++ ) { %>
+                    <h1>
+                        <%= cities[index] %>
+                    </h1>
+                    <img src="<%= pictures[index] %> " width='400px' alt="">
+                    <% } %>
+    </ul>
+
 </body>
 
 </html>
