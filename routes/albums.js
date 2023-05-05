@@ -20,6 +20,7 @@ router.get('/albums/:albumID', (req, res) => {
     let albumID = req.params.albumID;
     let album = [];
     let trackList = [];
+
     albumData.forEach(albumObj => {
         if (albumObj.albumName == albumID) {
             album.push(albumObj)
@@ -29,6 +30,7 @@ router.get('/albums/:albumID', (req, res) => {
     })
 
     res.render('albums', {
+        // albums: albumData,
         trackList: trackList,
         albums: album,
         pageTitle: `Haim - ${album[0].albumName}`
