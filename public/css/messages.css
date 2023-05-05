@@ -1,0 +1,75 @@
+/* blue: #003049
+red: #d62828
+orange: #f77f00
+yellow: #fcbf49
+cream: #eae2b7
+font-family: 'Space Grotesk', sans-serif; */
+
+.bg-cream-lt {
+    background-color: rgb(247, 127, 0, 0.2);
+}
+
+.bg-red {
+    background-color: #d62828;
+}
+
+.container-fluid {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#nav {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#navbar-logo {
+    width: 80px;
+}
+
+.nav-item {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #003049;
+    font-size: 25px;
+}
+
+#haim-portrait {
+    background-image: url('../images/haim_portrait.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: sticky;
+}
+
+.message-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+.post-container {
+    border-top: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.post {
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+#post-delete {
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+
+.post-delete {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    font-size: 15px;
+}
