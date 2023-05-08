@@ -7,7 +7,7 @@
     <title>
         messages
     </title>
-    <link rel="stylesheet" href="/css/messages.css">
+    <link rel="stylesheet" href="/css/chat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
@@ -65,42 +65,47 @@
         </div>
     </nav>
 
-    <div class="container-fluid" id="message-board">
-        <div class="row">
-            <div class="col-6" id="message-input">
-                <div class="display-6">post a message:</div>
-                <form class="message-form">
-                    <div class="mb-3 form-group">
-                        <label for="message-form-name" class="form-label">name:</label>
-                        <input name="name" type="name" class="form-control" id="message-form-name"
-                            placeholder="enter your name here">
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label for="message-form-title" class="form-label">post title:</label>
-                        <input name="title" type="text" class="form-control" id="message-form-title"
-                            placeholder="give your post a title">
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label for="message-form-message" class="form-label">message:</label>
-                        <textarea name="message" class="form-control" id="message-form-message"
-                            placeholder="tell us your thoughts here, then click submit" rows="5"></textarea>
-                    </div>
-                    <button type="submit">submit</button>
-                </form>
-                <div id="message-display">
-                    <div class="display-6">recent messages:</div>
-                    <div class="recent-messages" id="recent-messages"></div>
-                </div>
-            </div>
-
-            <div class="col-6 sticky-top" id="haim-portrait"></div>
-
+    <div class="row pics">
+        <div class="col-lg-4 col-md-12 haim-pic">
+            <img class="w-100 shadow-1-strong rounded p-3" src="/images/haim_performing.png" alt="">
         </div>
+        <div class="col-lg-4 col-md-12 haim-pic">
+            <img class="w-100 shadow-1-strong rounded p-3" src="/images/haim_performing_2.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12 haim-pic">
+            <img class="w-100 shadow-1-strong rounded p-3" src="/images/haim_performing_3.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="chat-container">
+        <div id="chat-form-container">
+            <form class="chat-form">
+                <div class="mb-3 form-group">
+                    <label for="chat-form-name" class="form-label">name:</label>
+                    <input name="username" type="text" class="form-control" id="chat-username"
+                        placeholder="enter your name here">
+                </div>
+                <div class="mb-3 form-group">
+                    <label for="chat-form-message" class="form-label">message:</label>
+                    <textarea name="chat" class="form-control" id="chat-message" placeholder="what do you want to say?"
+                        rows="1"></textarea>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+            <div id="chat-display">
+                <div class="display-6">chat:</div>
+                <div class="recent-messages" id="recent-messages"></div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     </div>
-
-    <script src="/js/messagesClient.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chatClient.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
