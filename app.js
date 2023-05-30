@@ -1,7 +1,7 @@
 const express = require('express');
 let app = express();
 const io = require('socket.io')()
-let PORT = 3000;
+let PORT = process.env.PORT || 3030;
 
 app.use(express.static('public'))
 
@@ -30,3 +30,5 @@ io.on('connection', (socket) => {
         io.emit('user has left the room')
     })
 })
+
+module.exports = router;
