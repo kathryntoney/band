@@ -1,7 +1,8 @@
 const express = require('express');
+const router = express.Router()
 let app = express();
 const io = require('socket.io')()
-let PORT = process.env.PORT || 3030;
+let PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'))
 
@@ -11,7 +12,6 @@ app.use(require('./routes/index'))
 app.use(require('./routes/albums'))
 app.use(require('./routes/messages'))
 app.use(require('./routes/chat'))
-
 
 const server = app.listen(PORT, () => {
     console.log(`listening on port: ${PORT}`);
